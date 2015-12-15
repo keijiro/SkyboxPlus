@@ -1,4 +1,4 @@
-Shader "Skybox/Cubemap Plus"
+Shader "SkyboxPlus/Cubemap"
 {
     Properties
     {
@@ -68,7 +68,7 @@ Shader "Skybox/Cubemap Plus"
             #pragma fragment frag
             ENDCG
         }
-    } 	
+    }
     Fallback Off
     CustomEditor "SkyboxPlus.CubemapMaterialEditor"
 }
