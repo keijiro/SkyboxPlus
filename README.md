@@ -6,7 +6,7 @@ SkyboxPlus
 Cubemap
 -------
 
-![inspector](http://40.media.tumblr.com/33e6a3b7e825f37e809e0e48f6554526/tumblr_nx4j4aJ6HQ1qio469o1_400.png)
+![screenshot](http://40.media.tumblr.com/33e6a3b7e825f37e809e0e48f6554526/tumblr_nx4j4aJ6HQ1qio469o1_400.png)
 
 *Cubemap* is a basic cubemapped skybox shader. In this shader, the cubemap can
 be rotated not only around the Y-axis but also around the X/Z-axis. It also has
@@ -16,12 +16,16 @@ cubemap.
 Hemisphere
 ----------
 
+![screenshot](https://36.media.tumblr.com/eea5f88746194b86bff8cb4831e14a15/tumblr_nzegxnM5Tm1qio469o2_400.png)
+
 *Hemisphere* is a basic gradient skybox shader. It only has three color values
 (color at north pole, on equator and at south pole), and linearly interpolate
 between them.
 
 Gradients
 ---------
+
+![screenshot](https://41.media.tumblr.com/c84320dbb7c7f0d892ec0908f40a52ff/tumblr_nzegxnM5Tm1qio469o1_400.png)
 
 *Gradients* is an additive gradient skybox shader. Each gradient has a direction
 vector and a color value, and it interpolate from black to the specified color.
