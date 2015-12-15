@@ -1,17 +1,32 @@
 SkyboxPlus
 ==========
 
-*SkyboxPlus* is a collection of skybox extensions for Unity 5.
+*SkyboxPlus* is a collection of skybox shaders for Unity.
 
-
-Cubemap Plus
-------------
+Cubemap
+-------
 
 ![inspector](http://40.media.tumblr.com/33e6a3b7e825f37e809e0e48f6554526/tumblr_nx4j4aJ6HQ1qio469o1_400.png)
 
-*Cubemap Plus* is a basic extension to the standard cubed skybox shader. With
-this extension, you can rotate the skybox with the Euler angles. You can also
-adjust the colofulness (color saturation) of the image.
+*Cubemap* is a basic cubemapped skybox shader. In this shader, the cubemap can
+be rotated not only around the Y-axis but also around the X/Z-axis. It also has
+the saturation property, which is used for adjusting the colorfulness of the
+cubemap.
+
+Hemisphere
+----------
+
+*Hemisphere* is a basic gradient skybox shader. It only has three color values
+(color at north pole, on equator and at south pole), and linearly interpolate
+between them.
+
+Gradients
+---------
+
+*Gradients* is an additive gradient skybox shader. Each gradient has a direction
+vector and a color value, and it interpolate from black to the specified color.
+The shape of the gradient can be adjusted with the exponent property. Up to four
+gradients can be specified at the same time.
 
 License
 -------
