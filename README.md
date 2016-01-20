@@ -6,7 +6,7 @@ SkyboxPlus
 Cubemap
 -------
 
-![screenshot](http://40.media.tumblr.com/33e6a3b7e825f37e809e0e48f6554526/tumblr_nx4j4aJ6HQ1qio469o1_400.png)
+![screenshot](http://40.media.tumblr.com/c6a7829cae1bcf87dbfa53ef393f4ef6/tumblr_o197gdneNg1qio469o1_400.png)
 
 *Cubemap* is a basic cubemapped skybox shader. The main difference from the
 standard skybox shader is that it can be rotated not only around the Y-axis
