@@ -38,7 +38,7 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Cubemap
+          name: _Tex
         second:
           m_Texture: {fileID: 8900000, guid: f82d2c81f3e644a9290d55e8a7ea587e, type: 3}
           m_Scale: {x: 1, y: 1}
@@ -83,6 +83,13 @@ Material:
           name: _MetallicGlossMap
         second:
           m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cubemap
+        second:
+          m_Texture: {fileID: 8900000, guid: f82d2c81f3e644a9290d55e8a7ea587e, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:

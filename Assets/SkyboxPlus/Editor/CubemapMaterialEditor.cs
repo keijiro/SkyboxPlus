@@ -19,7 +19,7 @@ namespace SkyboxPlus
 
         void FindProperties(MaterialProperty[] props)
         {
-            _cubemap = FindProperty("_Cubemap", props);
+            _cubemap = FindProperty("_Tex", props);
             _tint = FindProperty("_Tint", props);
             _euler = FindProperty("_Euler", props);
             _exposure = FindProperty("_Exposure", props);

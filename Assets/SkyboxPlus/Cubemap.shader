@@ -2,7 +2,7 @@ Shader "SkyboxPlus/Cubemap"
 {
     Properties
     {
-        [NoScaleOffset] _Cubemap("-", Cube) = "grey"{}
+        [NoScaleOffset] _Tex("-", Cube) = "grey"{}
         _Tint("-", Color) = (.5, .5, .5)
 
         _Euler("-", Vector) = (0, 0, 0)
@@ -21,8 +21,8 @@ Shader "SkyboxPlus/Cubemap"
     #pragma shader_feature _LOD_ON
     #include "UnityCG.cginc"
 
-    samplerCUBE _Cubemap;
-    half4 _Cubemap_HDR;
+    samplerCUBE _Tex;
+    half4 _Tex_HDR;
 
     half4 _Tint;
     half _Exposure;
@@ -55,11 +55,11 @@ Shader "SkyboxPlus/Cubemap"
     fixed4 frag(v2f i) : SV_Target
     {
 #ifdef _LOD_ON
-        half4 tex = texCUBElod(_Cubemap, float4(i.texcoord, _LodLevel));
+        half4 tex = texCUBElod(_Tex, float4(i.texcoord, _LodLevel));
 #else
-        half4 tex = texCUBE(_Cubemap, i.texcoord);
+        half4 tex = texCUBE(_Tex, i.texcoord);
 #endif
-        half3 c = DecodeHDR(tex, _Cubemap_HDR);
+        half3 c = DecodeHDR(tex, _Tex_HDR);
         c *= _Tint.rgb * unity_ColorSpaceDouble.rgb * _Exposure;
         c = lerp((half3)Luminance(c), c, _Saturation);
         return half4(c, 1);
