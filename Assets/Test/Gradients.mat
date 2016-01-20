@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Hemispheres
+  m_Name: Gradients
   m_Shader: {fileID: 4800000, guid: 1bd21c9be7f6f4549a0817ebff94e8d9, type: 3}
   m_ShaderKeywords: _DIRECTION1 _SWITCH2_ON _SWITCH3_ON _SWITCH4_ON
   m_LightmapFlags: 5
@@ -19,6 +19,18 @@ Material:
       data:
         first:
           name: _Exposure
+        second: 1
+      data:
+        first:
+          name: _Switch2
+        second: 1
+      data:
+        first:
+          name: _Switch3
+        second: 1
+      data:
+        first:
+          name: _Switch4
         second: 1
       data:
         first:
@@ -36,22 +48,26 @@ Material:
         first:
           name: _Exponent4
         second: 20
-      data:
-        first:
-          name: _Switch2
-        second: 1
-      data:
-        first:
-          name: _Switch3
-        second: 1
-      data:
-        first:
-          name: _Switch4
-        second: 1
     m_Colors:
       data:
         first:
+          name: _BaseColor
+        second: {r: .100000001, g: .100000001, b: .100000001, a: 1}
+      data:
+        first:
           name: _Direction1
+        second: {r: 0, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _Direction2
+        second: {r: .5, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _Direction3
+        second: {r: -.300000012, g: -1, b: -.200000003, a: 1}
+      data:
+        first:
+          name: _Direction4
         second: {r: 0, g: 1, b: 0, a: 1}
       data:
         first:
@@ -59,32 +75,16 @@ Material:
         second: {r: .159999996, g: .180000007, b: .189999998, a: 1}
       data:
         first:
-          name: _Direction2
-        second: {r: .5, g: 1, b: 0, a: 1}
-      data:
-        first:
           name: _Color2
         second: {r: .25999999, g: .280000001, b: .209999993, a: 1}
-      data:
-        first:
-          name: _Direction3
-        second: {r: -.300000012, g: -1, b: -.200000003, a: 1}
       data:
         first:
           name: _Color3
         second: {r: .150000006, g: .150000006, b: .119999997, a: 1}
       data:
         first:
-          name: _BaseColor
-        second: {r: .100000001, g: .100000001, b: .100000001, a: 1}
-      data:
-        first:
           name: _Color4
         second: {r: 1, g: .99000001, b: .949999988, a: 1}
-      data:
-        first:
-          name: _Direction4
-        second: {r: 0, g: 1, b: 0, a: 1}
       data:
         first:
           name: _NormalizedVector1
