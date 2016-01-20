@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Cubemap
+  m_Name: MipLevel
   m_Shader: {fileID: 4800000, guid: f2a20f3ce17b84e938179dc858a385eb, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _LOD_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 1000
   stringTagMap: {}
@@ -109,11 +109,11 @@ Material:
       data:
         first:
           name: _Lod
-        second: 0
+        second: 1
       data:
         first:
           name: _LodLevel
-        second: 0
+        second: 2
       data:
         first:
           name: _Parallax

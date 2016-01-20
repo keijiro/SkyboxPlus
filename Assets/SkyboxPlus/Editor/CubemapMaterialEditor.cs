@@ -10,6 +10,8 @@ namespace SkyboxPlus
         MaterialProperty _euler;
         MaterialProperty _exposure;
         MaterialProperty _saturation;
+        MaterialProperty _lod;
+        MaterialProperty _lodLevel;
 
         static GUIContent _textCubemap = new GUIContent("Cubemap");
 
@@ -22,6 +24,8 @@ namespace SkyboxPlus
             _euler = FindProperty("_Euler", props);
             _exposure = FindProperty("_Exposure", props);
             _saturation = FindProperty("_Saturation", props);
+            _lod = FindProperty("_Lod", props);
+            _lodLevel = FindProperty("_LodLevel", props);
         }
 
         public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
@@ -36,10 +40,20 @@ namespace SkyboxPlus
         bool ShaderPropertiesGUI(MaterialEditor materialEditor)
         {
             EditorGUI.BeginChangeCheck();
+
             materialEditor.TexturePropertySingleLine(_textCubemap, _cubemap, _tint);
             Vector3Property(materialEditor, _euler, "Rotation");
             materialEditor.ShaderProperty(_exposure, "Exposure");
             materialEditor.ShaderProperty(_saturation, "Saturation");
+
+            materialEditor.ShaderProperty(_lod, "Specify MIP Level");
+            if (_lod.hasMixedValue || _lod.floatValue > 0)
+            {
+                EditorGUI.indentLevel++;
+                materialEditor.ShaderProperty(_lodLevel, "Level");
+                EditorGUI.indentLevel--;
+            }
+
             return EditorGUI.EndChangeCheck();
         }
 
