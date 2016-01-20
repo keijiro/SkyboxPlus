@@ -18,7 +18,7 @@ for adjusting the colorfulness of the cubemap.
 The MIP level option controls the blurriness of the cubemap. It can be used
 for reproducing a bokeh-like blur effect on the background.
 
-![screenshot](http://36.media.tumblr.com/7d198e141cc716834701c3dcfede35c8/tumblr_o196zt39Yv1qio469o1_400.png)
+![screenshot](http://36.media.tumblr.com/7d198e141cc716834701c3dcfede35c8/tumblr_o196zt39Yv1qio469o1_640.png)
 
 To make this option effective, it’s required to turn on the “Glossy
 Reflection” (pre-convolution for glossy reflection) switch in the texture
