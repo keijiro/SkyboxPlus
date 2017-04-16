@@ -6,7 +6,7 @@ SkyboxPlus
 Cubemap
 -------
 
-![screenshot](http://40.media.tumblr.com/c6a7829cae1bcf87dbfa53ef393f4ef6/tumblr_o197gdneNg1qio469o1_400.png)
+![screenshot](http://i.imgur.com/wTbTH68.png)
 
 *Cubemap* is a basic cubemapped skybox shader. The main difference from the
 standard skybox shader is that it can be rotated not only around the Y-axis
@@ -18,7 +18,7 @@ for adjusting the colorfulness of the cubemap.
 The MIP level option controls the blurriness of the cubemap. It can be used
 for reproducing a bokeh-like blur effect on the background.
 
-![screenshot](http://36.media.tumblr.com/7d198e141cc716834701c3dcfede35c8/tumblr_o196zt39Yv1qio469o1_640.png)
+![screenshot](http://i.imgur.com/K4DSGjh.png)
 
 To make this option effective, it’s required to turn on the “Glossy
 Reflection” (pre-convolution for glossy reflection) switch in the texture
@@ -28,11 +28,10 @@ lighting (reflection).
 
 [skybox]: http://docs.unity3d.com/ScriptReference/Skybox.html
 
-
 Hemisphere
 ----------
 
-![screenshot](https://36.media.tumblr.com/eea5f88746194b86bff8cb4831e14a15/tumblr_nzegxnM5Tm1qio469o2_400.png)
+![screenshot](http://i.imgur.com/JdNZLeH.png)
 
 *Hemisphere* is a basic gradient skybox shader. It only has three color values
 (color at north pole, on equator and at south pole). The shader linearly
@@ -41,7 +40,7 @@ interpolates between them.
 Gradients
 ---------
 
-![screenshot](https://41.media.tumblr.com/c84320dbb7c7f0d892ec0908f40a52ff/tumblr_nzegxnM5Tm1qio469o1_400.png)
+![screenshot](http://i.imgur.com/pkSZG2O.png)
 
 *Gradients* is an additive gradient skybox shader. Each gradient has a direction
 vector and a color value. The shader interpolates along the vector, from black to
