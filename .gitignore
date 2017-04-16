@@ -6,6 +6,7 @@ Temp/
 *.sln
 *.pidb
 *.userprefs
+*.unitypackage
 
 .DS_Store
 *.swp
