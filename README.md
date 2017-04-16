@@ -1,70 +1,65 @@
 SkyboxPlus
 ==========
 
-*SkyboxPlus* is a collection of skybox shaders for Unity.
+**SkyboxPlus** is a collection of skybox shaders for Unity.
+
+System Requirements
+-------------------
+
+Unity 5.5 or later versions.
+
+Installation
+------------
+
+Download one of the unitypackage files from the [Releases] page and import it
+to a project.
+
+[Releases]: https://github.com/keijiro/SkyboxPlus/releases
 
 Cubemap
 -------
 
 ![screenshot](http://i.imgur.com/wTbTH68.png)
 
-*Cubemap* is a basic cubemapped skybox shader. The main difference from the
-standard skybox shader is that it can be rotated not only around the Y-axis
-but also around the X/Z-axis. It also has a saturation slider, which is used
-for adjusting the colorfulness of the cubemap.
+**Cubemap** is a basic cubemapped skybox shader. The main difference from the
+standard skybox shader is that it can be rotated not only around the Y-axis but
+also around the X/Z-axis. It also has a saturation slider that can be used for
+adjusting the colorfulness of the cubemap.
 
-### MIP level option
+### MIP Level property
 
-The MIP level option controls the blurriness of the cubemap. It can be used
-for reproducing a bokeh-like blur effect on the background.
+The **MIP Level** property controls the blurriness of the cubemap. It can be
+used for mimicking bokeh-like blur effects on the background.
 
 ![screenshot](http://i.imgur.com/K4DSGjh.png)
 
-To make this option effective, it’s required to turn on the “Glossy
-Reflection” (pre-convolution for glossy reflection) switch in the texture
-importer settings. Also, it’s recommended to use the [Skybox component]
-[skybox] to apply different MIP levels to the camera (background) and
-lighting (reflection).
+To make this option effective, it’s required to turn on the Glossy Reflection
+(pre-convolution for glossy reflection) switch in the texture importer
+settings. Also it’s recommended to use the [Skybox component] to apply
+different MIP levels to the camera background and lighting (reflection).
 
-[skybox]: http://docs.unity3d.com/ScriptReference/Skybox.html
+[Skybox component]: http://docs.unity3d.com/ScriptReference/Skybox.html
 
 Hemisphere
 ----------
 
 ![screenshot](http://i.imgur.com/JdNZLeH.png)
 
-*Hemisphere* is a basic gradient skybox shader. It only has three color values
-(color at north pole, on equator and at south pole). The shader linearly
-interpolates between them.
+**Hemisphere** is a basic gradient skybox shader. It only has three color
+properties: color at the north pole, on the equator and at the south pole. The
+shader linearly interpolates between them.
 
 Gradients
 ---------
 
 ![screenshot](http://i.imgur.com/pkSZG2O.png)
 
-*Gradients* is an additive gradient skybox shader. Each gradient has a direction
-vector and a color value. The shader interpolates along the vector, from black to
-the given color. The shape of the gradient can be adjusted with the exponent
-property. Up to four gradients can be given at the same time.
+**Gradients** is an additive gradient skybox shader. Each gradient has a
+direction vector and a color value. The shader interpolates along the vector,
+from black to the given color. The shape of the gradient can be adjusted with
+the exponent property. Up to four gradients can be given at the same time.
 
 License
 -------
 
-Copyright (C) 2015, 2016 Keijiro Takahashi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[MIT](LICENSE.md)
